@@ -12,8 +12,8 @@
             </div>
             <div class="collapse navbar-collapse" id="ex-navbar-colla-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">新規登録</a></li>
-                    <li><a href="#">ログイン</a></li>
+                    <li><a href="{{ route('signup.get') }}">新規登録</a></li>
+                    <li><a href="{{ route('login.get') }}">ログイン</a></li>
                 </ul>
             </div>
         </div>
