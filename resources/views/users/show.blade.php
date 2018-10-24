@@ -14,13 +14,13 @@
                <li>
                    <div class="status-label">WANT</div>
                    <div id="want_count" class="status-value">
-                       {{ $count_want }}
+                       <p>{{ $count_want }}</p>
                    </div>
                </li>
                <li>
                    <div class="status-label">HAVE</div>
                    <div id="have_count" class="status-value">
-                       <p>xxx</p>
+                       <p>{{ $count_have }}</p>
                    </div>
                </li>
             </ul>
