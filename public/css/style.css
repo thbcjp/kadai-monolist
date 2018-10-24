@@ -116,6 +116,10 @@ p.item-title {
     color: #777;
 }
 
+.user-profile .status ul li:last-child {
+    border: none;
+}
+
 .user-profile .status ul li .status-label {
     font-size: 12px;
 }

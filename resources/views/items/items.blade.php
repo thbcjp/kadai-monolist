@@ -1,6 +1,5 @@
 @if($items)
     <div class="row">
-        @if(is_array($items))
         @foreach($items as $item)
             <div class="item">
                 <div class="col-md-3 col-sm-4 col-xs-12">
@@ -25,6 +24,5 @@
                 </div>
             </div>
         @endforeach
-        @endif
     </div>
 @endif

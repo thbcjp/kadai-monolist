@@ -61,7 +61,7 @@ class User extends Authenticatable
 
         if ($exist) {
             // 既に Want していれば Want を外す
-            \DB::delete("DELETE FROM item_user WHERE user_id = ? AND item_id = ? AND type = 'want'", [$this->id, $itemId]);
+            \DB::delete("DELETE FROM item_user WHERE user_id = ? AND item_id = ? AND type = 'want'", [\Auth::user()->id, $itemId]);
         } else {
             // 未 Want であれば何もしない
             return false;
@@ -106,7 +106,7 @@ class User extends Authenticatable
         
         if($exist){
             // 既に Have していれば Have を外す
-            \DB::delete("DELETE FROM item_user WHERE user_id = ? AND item_id = ? AND type = 'have'", [$this->id, $itemId]);
+            \DB::delete("DELETE FROM item_user WHERE user_id = ? AND item_id = ? AND type = 'have'", [\Auth::user()->id, $itemId]);
         } else {
             // 未 Have であれば何もしない
             return false;
